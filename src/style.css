@@ -7,9 +7,8 @@
 body {
   font-family: 'Edu VIC WA NT Hand', 'Segoe UI', Tahoma, Geneva, Verdana, roboto, sans-serif;
   line-height: 1.6;
-  background: forced-color(linear-gradient(135deg, #667eea 0%, #7555d4 100%));
-  color: forced-color(#333);
-  
+  background: linear-gradient(135deg, #667eea 0%, #7555d4 100%);
+  color: #333;
   min-height: 100vh;
 }
 
@@ -53,28 +52,31 @@ header {
   word-spacing: 0.2em;
 }
 
-span1 {
+span.color1 {
   color: #ff0080e1;
   font-size: 2.3rem;
   font-weight: 700;
   margin-left: 1rem;
 }
 
-span2 {
+span.color2 {
   color: #4000ffe5;
   font-size: 2.0rem;
   font-weight: 700;
 }
 
-span3 {
+span.color3 {
   color: #1AB3FF;
   font-size: 2.3rem;
   font-weight: 700;
 }
 
 .event-title span4 {
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
   color: #4000ffe5;
-  font-style: 'Edu VIC WA NT Hand';
+  font-family: 'Edu VIC WA NT Hand';
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -330,16 +332,72 @@ main {
 .featured-events {
   background: white;
   border-radius: 20px;
-  padding: 3rem;
   margin-bottom: 3rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
 }
 
 .featured-events h2 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-bottom: 2rem;
   text-align: center;
   color: #FF007F;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background-color: #f0f0f0;
+  border: none;
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active1 {
+  background-color: #007bff;
+  color: white;
+}
+
+/* 개별 이벤트 아이템 */
+.event-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.event-item:hover {
+  transform: scale(1.02);
+}
+
+.event-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.event-info {
+  padding: 10px;
+}
+
+.event-info h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.event-info p {
+  margin: 4px 0;
+  color: #555;
 }
 
 .events-grid {
@@ -416,7 +474,7 @@ main {
 }
 
 .event-title {
-  font-size: 1.3ㄴrem;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
   color: #444444;
   font-weight: 700;
@@ -648,7 +706,7 @@ footer {
   }
 }
 
-.filter-buttons {
+.filters {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -672,12 +730,7 @@ footer {
   color: white;
 }
 
-.filter-btn.active1 {
-  background: #667eea;
-  color: white;
-}
-
-.filter-btn.active2 {
+#active1, #active2 {
   background: linear-gradient(45deg, #4000ffe5, #9889c5e5);
   border: none;
   color: white;
@@ -702,77 +755,6 @@ footer {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(8, 164, 241, 0.4);
   background: linear-gradient(45deg, #a2daf7f1, #08a4f1);
-}
-
-.keyword-ranking {
-  width: 300px;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 15px;
-  padding: 1.5rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 0;
-  right: 20px;
-  margin-top: 20px;
-}
-
-.keyword-ranking h2 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  text-align: left;
-  color: #333;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #eee;
-  margin-top: 0;
-}
-
-.keyword-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.keyword-item {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 0;
-  margin-bottom: 0.5rem;
-  transition: transform 0.2s ease;
-  border-radius: 8px;
-}
-
-.keyword-item:hover {
-  transform: translateX(5px);
-  background: rgba(102, 126, 234, 0.05);
-}
-
-.keyword-rank {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #FF007F;
-  min-width: 30px;
-  text-align: center;
-}
-
-.keyword-content {
-  flex: 1;
-  margin-left: 0.5rem;
-}
-
-.keyword-title {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 0.1rem;
-}
-
-.keyword-trend {
-  font-size: 0.9rem;
-  font-weight: 700;
-  margin-left: 0.5rem;
-  min-width: 30px;
-  text-align: right;
-  color: #4000ffe5;
 }
 
 @media (max-width: 1200px) {
@@ -913,9 +895,6 @@ footer {
   font-size: 0.95rem;
   margin-bottom: 1rem;
   line-height: 1.6;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
@@ -963,26 +942,26 @@ footer {
   }
 }
 
-.trending-searches {
+.trend-searches {
   margin: 1.5rem 0;
   text-align: center;
 }
 
-.trending-label {
+.trend-label {
   display: block;
   font-size: 0.9rem;
   color: #666;
   margin-bottom: 1rem;
 }
 
-.trending-buttons {
+.trend-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
   justify-content: center;
 }
 
-.trending-btn {
+.trend-btn {
   background: white;
   border: 2px solid #FF007F;
   color: #FF007F;
@@ -995,7 +974,7 @@ footer {
   position: relative;
 }
 
-.trending-btn::before {
+.trend-btn::before {
   content: attr(data-rank);
   position: absolute;
   top: -8px;
@@ -1012,7 +991,7 @@ footer {
   font-weight: bold;
 }
 
-.trending-btn:hover {
+.trend-btn:hover {
   background: #FF007F;
   color: white;
   transform: translateY(-2px);
@@ -1040,4 +1019,3 @@ footer {
 .error-message p {
   color: #dc3545;
 }
-

@@ -5,6 +5,31 @@ const CLIENT_SECRET = import.meta.env.VITE_NAVER_CLIENT_SECRET; // 환경 변수
 
 const url = '/api/v1/search/news.json?query=%EC%A3%BC%EC%8B%9D&display=10&start=1&sort=sim'; // .json으로 변경
 
+document.addEventListener('DOMContentLoaded', function () {
+  const buttons = document.querySelectorAll('.filter-btn');
+  const events = document.querySelectorAll('.event-item');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      // 버튼 활성화 표시 갱신
+      buttons.forEach(btn => btn.classList.remove('active1'));
+      button.classList.add('active1');
+
+      const filter = button.getAttribute('data-filter');
+
+      events.forEach(event => {
+        const category = event.getAttribute('data-category');
+
+        if (filter === 'all' || category === filter) {
+          event.style.display = 'block';
+        } else {
+          event.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+
 fetch(url, {
   method: 'GET',
   headers: {
@@ -24,3 +49,4 @@ fetch(url, {
 .catch(error => {
   console.error('Fetch error:', error);
 });
+
