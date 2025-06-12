@@ -131,7 +131,7 @@ main {
 
 .container2 {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 2rem, auto;
   padding: 0 20px;
   position: relative;
 }
@@ -145,24 +145,24 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin: 2rem, auto
 }
 
 .hero {
   text-align: center;
-  padding: 4rem 0;
+  padding: 2rem 0;
   color: white;
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-family: 'Edu VIC WA NT Hand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   opacity: 0.9;
   max-width: 600px;
   margin: 0 auto;
@@ -171,7 +171,7 @@ main {
 
 .categories {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 2rem;
   margin-bottom: 4rem;
@@ -329,7 +329,8 @@ main {
   background: linear-gradient(45deg, #FF69B4, #FF007F);
 }
 
-.featured-events {
+.featured1 {
+  max-width: 1200px;
   background: white;
   border-radius: 20px;
   margin-bottom: 3rem;
@@ -338,7 +339,7 @@ main {
   font-family: 'Arial', sans-serif;
 }
 
-.featured-events h2 {
+.featured1 h2 {
   font-size: 2.4rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -361,7 +362,7 @@ main {
 }
 
 .filter-btn:hover,
-.filter-btn.active1 {
+#active1 {
   background-color: #007bff;
   color: white;
 }
@@ -481,9 +482,14 @@ main {
   line-height: 1.4;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 .event-location {
@@ -503,7 +509,7 @@ main {
   color: #FF007F;
 }
 
-.featured-events .btn {
+.featured1 .btn {
   display: inline-block;
   padding: 0.8rem 2rem;
   background: linear-gradient(45deg, #FF007F, #FF69B4);
@@ -516,19 +522,18 @@ main {
   text-align: center;
 }
 
-.featured-events .btn:hover {
+.featured1 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(255, 0, 127, 0.4);
   background: linear-gradient(45deg, #FF69B4, #FF007F);
 }
 
-.featured-videos {
+.featured2 {
   background: white;
   border-radius: 25px;
-
 }
 
-.featured-videos h2 {
+.featured2 h2 {
 font-size: 2.5rem;
 margin-bottom: 2rem;
 text-align: center;
@@ -730,7 +735,7 @@ footer {
   color: white;
 }
 
-#active1, #active2 {
+#active1, #active2, #active3 {
   background: linear-gradient(45deg, #4000ffe5, #9889c5e5);
   border: none;
   color: white;
@@ -954,10 +959,10 @@ footer {
   margin-bottom: 1rem;
 }
 
-.trend-buttons {
+.trends {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 1rem;
   justify-content: center;
 }
 
