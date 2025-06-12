@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부산 문화예술 - 공연, 행사, 교육 정보</title>
+    <!-- Google Analytics 4 태그
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZT8HJ1K5QS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZT8HJ1K5QS');
+    </script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+ 
+</head>
+
+  <body>
+    <header>
+      <div class="container1">
+          <div class="header-content">
+              <div class="logo"><span1>C</span1>ity  <span2>o</span2>f  <span3>C</span3>ulture,</div>  <div class="logo1"><span1>Busan</span1>  <span2>is</span2>  <span3>Variety!</span3></div>
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="#home">홈</a></li>
+                  <li><a href="#performances">공연</a></li>
+                  <li><a href="#events">행사</a></li>
+                  <li><a href="#education">교육</a></li>
+                  <li><a href="#venues">공연장</a></li>
+                  <li><a href="#videos">영상</a></li>
+              </ul>
+          </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container2">
+          <div class="main-content">
+              <section class="hero" id="home">
+                  <h1>부산  문화콘텐츠의  모든  것</h1>
+                  <p><span1>부산</span1>의 <span3>다양한</span3> 문화예술콘텐츠를 한 곳에 만나보세요. </br> 
+                     충만한 <span1>문화</span1>의 <span3>도시</span3>, 부산의 매력을 발견하세요.</p>
+              </section>
+
+              <section class="culture-search">
+                  <div class="search-container">
+                      <h2>부산 문화정보 검색</h2>
+                      <form id="culture-search-form" class="search-form">
+                          <div class="search-input-group">
+                              <input type="text" id="culture-search-input" 
+                                     placeholder="공연, 전시, 행사 등 검색어를 입력하세요" 
+                                     required>
+                              <button type="submit" class="search-btn">검색</button>
+                          </div>
+                      </form>
+                      <div class="trending-searches">
+                          <span class="trending-label">실시간 인기 검색어</span>
+                          <div class="trending-buttons">
+                              <button class="trending-btn" data-rank="1">부산국제영화제</button>
+                              <button class="trending-btn" data-rank="2">부산비엔날레</button>
+                              <button class="trending-btn" data-rank="3">부산불꽃축제</button>
+                              <button class="trending-btn" data-rank="4">부산문화회관</button>
+                              <button class="trending-btn" data-rank="5">부산시립미술관</button>
+                          </div>
+                      </div>
+                      <div id="search-results" class="search-results">
+                          <!-- 검색 결과가 여기에 동적으로 표시됩니다 -->
+                      </div>
+                  </div>
+              </section>
+
+              <section class="categories">
+                  <div class="category-card">
+                      <span class="category-icon">🎭</span>
+                      <h3>공연 정보</h3>
+                      <p>연극, 뮤지컬, 콘서트, 오페라 등 부산에서 열리는 다양한 공연 정보를 확인하세요.</p>
+                      <div class="button-group">
+                          <a href="https://ticket.interpark.com/TiKi/Special/TPRegionReserve.asp?Region=42021&RegionName=%BA%CE%BB%EA" class="btn">더 보기</a>
+                          <a href="https://bsaha.or.kr/html/" class="btn1">소공연장</a>
+                      </div>
+                  </div>
+                  <div class="category-card">
+                      <span class="category-icon">🎐</span>
+                      <h3>문화행사</h3>
+                      <p>전시회, 페스티벌, 워크숍 등 부산의 문화 행사와 이벤트 소식을 놓치지 마세요.</p>
+                      <a href="https://www.busandabom.net/index.nm" class="btn">더 보기</a>
+                  </div>
+                  <div class="category-card">
+                      <span class="category-icon">🎯</span>
+                      <h3 class="arte-trend-title">Arte의 트렌드</h3>
+                      <div class="keyword-list">
+                          <div class="keyword-item">
+                              <div class="keyword-rank">1</div>
+                              <div class="keyword-content">
+                                  <div class="keyword-title">시민사회문화예술</div>
+                              </div>
+                              <div class="keyword-trend">▲2</div>
+                          </div>
+                          <div class="keyword-item">
+                              <div class="keyword-rank">2</div>
+                              <div class="keyword-content">
+                                  <div class="keyword-title">ESG 경영</div>
+                              </div>
+                              <div class="keyword-trend">▲3</div>
+                          </div>
+                          <div class="keyword-item">
+                              <div class="keyword-rank">3</div>
+                              <div class="keyword-content">
+                                  <div class="keyword-title">전문인력 양성</div>
+                              </div>
+                              <div class="keyword-trend">▼1</div>
+                          </div>
+                          <div class="keyword-item">
+                              <div class="keyword-rank">4</div>
+                              <div class="keyword-content">
+                                  <div class="keyword-title">문화예술 R&D</div>
+                              </div>
+                              <div class="keyword-trend">▲1</div>
+                          </div>
+                          <div class="keyword-item">
+                              <div class="keyword-rank">5</div>
+                              <div class="keyword-content">
+                                  <div class="keyword-title"> 어린이 예술교육</div>
+                              </div>
+                              <div class="keyword-trend">-</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="category-card">
+                      <span class="category-icon">🎪</span>
+                      <h3>문화공간</h3>
+                      <p>부산의 다양한 문화공간과 예술 시설을 소개합니다. 공연장, 전시관, 문화센터 등을 찾아보세요.</p>
+                      <a href="https://www.bscc.or.kr/intro/" class="btn">더 보기</a>
+                  </div>
+                  <div class="category-card">
+                      <span class="category-icon">🎨</span>
+                      <h3>문화교육</h3>
+                      <p>부산의 다양한 배움의 기회를 제공하는 문화예술 교육 프로그램과 강좌 정보를 확인하세요.</p>
+                      <a href="https://www.bscc.or.kr/edu/" class="btn">더 보기</a>
+                  </div>
+                  <div class="category-card">
+                      <span class="category-icon">📺</span>
+                      <h3>이슈 문화 숏텐츠</h3>
+                      <div class="shorts-list">
+                          <div class="shorts-item">
+                              <div class="shorts-rank">1</div>
+                              <div class="shorts-content">
+                                  <div class="shorts-title">부산 국제영화제 하이라이트</div>
+                              </div>
+                              <div class="shorts-views">2.5만</div>
+                              <div class="shorts-trend">▲3</div>
+                          </div>
+                          <div class="shorts-item">
+                              <div class="shorts-rank">2</div>
+                              <div class="shorts-content">
+                                  <div class="shorts-title">부산 문화회관 클래식 공연</div>
+                              </div>
+                              <div class="shorts-views">1.8만</div>
+                              <div class="shorts-trend">▲1</div>
+                          </div>
+                          <div class="shorts-item">
+                              <div class="shorts-rank">3</div>
+                              <div class="shorts-content">
+                                  <div class="shorts-title">부산 비엔날레 전시 투어</div>
+                              </div>
+                              <div class="shorts-views">1.5만</div>
+                              <div class="shorts-trend">▼1</div>
+                          </div>
+                          <div class="shorts-item">
+                              <div class="shorts-rank">4</div>
+                              <div class="shorts-content">
+                                  <div class="shorts-title">국악 현대화 프로젝트</div>
+                              </div>
+                              <div class="shorts-views">1.2만</div>
+                              <div class="shorts-trend">NEW</div>
+                          </div>
+                          <div class="shorts-item">
+                              <div class="shorts-rank">5</div>
+                              <div class="shorts-content">
+                                  <div class="shorts-title">부산 스트릿 댄스 페스티벌</div>
+                              </div>
+                              <div class="shorts-views">1.0만</div>
+                              <div class="shorts-trend">▲2</div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+
+              <section class="featured-events">
+                  <h2>이번 달 공연 정보</h2>
+                  <div class="filter-buttons">
+                      <button class="filter-btn active1" data-filter="all">전체</button>
+                      <br/>
+                      <button class="filter-btn" data-filter="연극">연극</button>
+                      <button class="filter-btn" data-filter="뮤지컬">뮤지컬</button>
+                      <button class="filter-btn" data-filter="콘서트">콘서트</button>
+                      <button class="filter-btn" data-filter="국악">국악</button>
+                      <button class="filter-btn" data-filter="무용">무용</button>
+                      <button class="filter-btn" data-filter="미술">미술</button>
+                  </div>
+                  <div class="events-grid">
+                      <!-- 공연 정보가 동적으로 로드됩니다 -->
+                      <div class="loading-message">
+                          <p>공연 정보를 불러오는 중입니다...</p>
+                      </div>
+                  </div>
+              </section>
+
+              <section class="featured-videos" id="videos">
+                  <h2>추천 영상 콘텐츠</h2>
+                  <div class="filter-buttons">
+                      <button class="filter-btn active2" data-filter="all">전체</button>
+                      <br/>
+                      <button class="filter-btn" data-filter="performance">공연 실황</button>
+                      <button class="filter-btn" data-filter="documentary">다큐멘터리</button>
+                      <button class="filter-btn" data-filter="interview">인터뷰</button>
+                      <button class="filter-btn" data-filter="education">영상교육</button>
+                  </div>
+                  <div class="events-grid2">
+                      <div class="event-card2" data-category="performance">
+                          <div class="event-image2">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/GOhWWJ9VhOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                          </div>
+                          <div class="event-content2">
+                              <div class="event-date">2024.12.15</div>
+                              <h3 class="event-title">부산시립교향악단 - 베토벤 교향곡 제9번 '합창'</h3>
+                              <div class="event-location">
+                                  <a href="https://www.bscc.or.kr/intro/" target="_blank">부산문화회관</a>
+                              </div>
+                              <a href="https://www.youtube.com/watch?v=GOhWWJ9VhOk" target="_blank" class="btn">시청하기</a>
+                          </div>
+                      </div>
+                      <div class="event-card2" data-category="documentary">
+                          <div class="event-image2">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/FmmlBchkXlE?si=2ZrrpnnP1Gv1qF6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                          </div>
+                          <div class="event-content2">
+                              <div class="event-date">2025.06.20</div>
+                              <h3 class="event-title">부산의 문화유산을 찾아서</h3>
+                              <div class="event-location">
+                                  <a href="https://www.knn.co.kr/" target="_blank">부산knn</a>
+                              </div>
+                              <a href="https://www.youtube.com/watch?v=OMRR1qUCPlk" target="_blank" class="btn">시청하기</a>
+                          </div>
+                      </div>
+                      <div class="event-card2" data-category="interview">
+                          <div class="event-image2">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/r6HjsuZcALk?si=mnBpUBWgMpAvgvCH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                          </div>
+                          <div class="event-content2">
+                              <div class="event-date">2025.06.25</div>
+                              <h3 class="event-title">부산 예술가와의 대화</h3>
+                              <div class="event-location">
+                                  <a href="https://www.bscf.or.kr/" target="_blank">부산문화재단</a>
+                              </div>
+                              <a href="https://youtu.be/r6HjsuZcALk?si=mnBpUBWgMpAvgvCH" target="_blank" class="btn">시청하기</a>
+                          </div>
+                      </div>
+                      <div class="event-card2" data-category="education">
+                          <div class="event-image2">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/gUpPeQAVoZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                          </div>
+                          <div class="event-content2">
+                              <div class="event-date">2025.06.13</div>
+                              <h3 class="event-title">부산 아시아 영화학교</h3>
+                              <div class="event-location">
+                                  <a href="https://www.bfc.or.kr/" target="_blank">부산영상위원회</a>
+                              </div>
+                              <a href="https://www.youtube.com/watch?v=gUpPeQAVoZA" target="_blank" class="btn">시청하기</a>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+
+              <section class="newsletter">
+                  <h2>문화예술 소식 구독하기</h2>
+                  <p>부산의 최신 문화예술 정보를 이메일로 받아보세요.</p>
+                  <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+                      <input type="email" placeholder= "이메일 주소를 입력하세요" required>
+                      <button type="submit">구독하기</button>
+                  </form>
+              </section>
+          </div>
+      </div>
+  </main>
+
+    <footer>
+      <div class="container">
+          <p>&copy; 2025 부산 문화예술. 모든 권리 보유.</p>
+          <div class="social-links">
+              <a href="#">📘</a>
+              <a href="#">📷</a>
+              <a href="#">🐦</a>
+              <a href="#">📺</a>
+          </div>
+      </div>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+
+  </body>
+</html>
