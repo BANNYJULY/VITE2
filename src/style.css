@@ -155,7 +155,7 @@ main {
 }
 
 .hero h1 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   font-family: 'Edu VIC WA NT Hand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1035,4 +1035,11 @@ footer {
 
 .error-message p {
   color: #dc3545;
+}
+
+#copyright {
+  font-style: vendera;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
 }
