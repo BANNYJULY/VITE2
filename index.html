@@ -22,16 +22,16 @@
     <header>
       <div class="container1">
           <div class="header-content">
-              <div class="logo"><span class="color1">C</span>ity  <span class="color2">o</span>f  <span class="color3">C</span>ulture,</div>  <div class="logo1"><span class="color1">Busan</span>  <span class="color2">is</span>  <span class="color3">Variety!</span></div>
+              <div class="logo"><span id="color1">C</span>ity  <span id="color2">o</span>f  <span id="color3">C</span>ulture,</div>  <div class="logo1"><span id="color1">Busan</span>  <span id="color2">is</span>  <span id="color3">Variety!</span></div>
           </div>
           <nav>
               <ul>
                   <li><a href="#home">홈</a></li>
-                  <li><a href="#performances">공연</a></li>
-                  <li><a href="#events">행사</a></li>
-                  <li><a href="#education">교육</a></li>
-                  <li><a href="#venues">공연장</a></li>
-                  <li><a href="#videos">영상</a></li>
+                  <li><a href="#search">문화정보</a></li>
+                  <li><a href="#space">문화공간</a></li>
+                  <li><a href="#performance">공연정보</a></li>
+                  <li><a href="#video">영상콘텐츠</a></li>
+                  <li><a href="#subscription">구독</a></li>
               </ul>
           </nav>
       </div>
@@ -42,11 +42,11 @@
           <div class="main-content">
               <section class="hero" id="home">
                   <h1>부산  문화콘텐츠의  모든  것</h1>
-                  <p><span class="color1">부산</span>의 <span class="color3">다양한</span> 문화예술콘텐츠를 한 곳에 만나보세요. </br> 
-                     충만한 <span class="color2">문화</span>의 <span class="color3">도시</span>, 부산의 매력을 발견하세요.</p>
+                  <p><span id="color1">부산</span>의 <span id="color3">다양한</span> 문화예술콘텐츠를 한 곳에 만나보세요. </br> 
+                     충만한 <span id="color2">문화</span>의 <span id="color3">도시</span>, 부산의 매력을 발견하세요.</p>
               </section>
 
-              <section class="culture-search">
+              <section class="culture" id="search">
                   <div class="search-container">
                       <h2>부산 문화정보 검색</h2>
                       <form id="culture-search-form" class="search-form">
@@ -54,7 +54,7 @@
                               <input type="text" id="culture-search-input" 
                                      placeholder="공연, 전시, 행사 등 검색어를 입력하세요" 
                                      required>
-                              <button type="submit" class="search-btn">검색</button>
+                              <button type="submit" id="active">검색</button>
                           </div>
                       </form>
                       <div class="trend-searches">
@@ -73,10 +73,10 @@
                   </div>
               </section>
 
-              <section class="categories">
+              <section class="category" id="space">
                   <div class="category-card">
                       <span class="category-icon">🎭</span>
-                      <h3>공연 정보</h3>
+                      <h3>공연장</h3>
                       <p>연극, 뮤지컬, 콘서트, 오페라 등 부산에서 열리는 다양한 공연 정보를 확인하세요.</p>
                       <div class="button-group">
                           <a href="https://ticket.interpark.com/TiKi/Special/TPRegionReserve.asp?Region=42021&RegionName=%BA%CE%BB%EA" class="btn">더 보기</a>
@@ -104,11 +104,11 @@
                   </div>
                 </section>
 
-              <section class="featured1" id="events">
-                  <h2>이번 달 공연 정보</h2>
+              <section class="featured1" id="performance">
+                  <h2>공연정보</h2>
                   <div class="filters">
-                      <button class="filter-btn" id="active1" data-filter="all">전체</button>
-                      <br/>
+                    <button class="filter-btn" id="active1" data-filter="all">전체</button>
+                    </br>
                       <button class="filter-btn" data-filter="연극">연극</button>
                       <button class="filter-btn" data-filter="뮤지컬">뮤지컬</button>
                       <button class="filter-btn" data-filter="콘서트">콘서트</button>
@@ -122,9 +122,9 @@
                     <div class="event-item" data-category="연극">
                       <img src="public/vegitarian.jpg" alt="채식주의자">
                       <div class="event-info">
-                        <h3>부산국제연극제 : 채식주의자 </h3>
-                        <p>날짜: 2025.06.01. 일요일 18시</p>
-                        <p>장소: 영화의 전당 하늘연극장</p>
+                        <h3>부산국제연극제 '채식주의자'</h3>
+                        <p>2025.06.01. 일요일 18시</p>
+                        <p>영화의 전당 하늘연극장</p>
                       </div>
                       <a href="https://www.bipaf.org/page/?pid=ticket" target="_blank" class="btn1">예매하기</a>
                     </div>
@@ -133,9 +133,9 @@
                     <div class="event-item" data-category="뮤지컬">
                       <img src="public/j&h.jpg" alt="지킬앤하이드">
                       <div class="event-info">
-                        <h3>뮤지컬: 지킬 앤 하이드</h3>
-                        <p>날짜: 2025.06.08 ~ 2025.06.15</p>
-                        <p>장소: 부산 드림씨어터 </p>
+                        <h3>뮤지컬 '지킬 앤 하이드'</h3>
+                        <p>2025.06.08 ~ 2025.06.15</p>
+                        <p>부산 드림씨어터 </p>
                       </div>
                       <a href="https://www.dreamtheatre.co.kr/Performance/Performance/Detail?num=112" target="_blank" class="btn1">예매하기</a>
                     </div>
@@ -144,9 +144,9 @@
                     <div class="event-item" data-category="콘서트">
                       <img src="public/daesung.png" alt="부산 원아시아 콘서트">
                       <div class="event-info">
-                        <h3>부산 원아시아 빅콘서트 : DEASUNG</h3>
-                        <p>날짜: 2025.06.13. 금요일 19시</p>
-                        <p>장소: 벡스코 제1전시장</p>
+                        <h3>부산 원아시아 빅콘서트 'DEASUNG'</h3>
+                        <p>2025.06.13. 금요일 19시</p>
+                        <p>벡스코 제1전시장</p>
                       </div>
                       <a href="https://ticket.melon.com/performance/index.htm?prodId=211313" target="_blank" class="btn1">예매하기</a>
                     </div>
@@ -155,9 +155,9 @@
                     <div class="event-item" data-category="국악">
                       <img src="public/busan-gugak.jpg" alt="국악공연 포스터">
                       <div class="event-info">
-                        <h3>세계음악 렉처: 하림과 블루카멜앙상블</h3>
-                        <p>날짜: 2025.06.12. 목요일 19시30분</p>
-                        <p>장소: 국립부산국악원 연악당</p>
+                        <h3>세계음악 한국 '하림과 블루카멜앙상블'</h3>
+                        <p>2025.06.12. 목요일 19시30분</p>
+                        <p>국립부산국악원 연악당</p>
                       </div>
                       <a href="https://busan.gugak.go.kr/BG/contents/BG0101020000.do?prfmSn=3988&prfmDtSn=1&schM=view
                       " target="_blank" class="btn1">예매하기</a>
@@ -167,9 +167,9 @@
                     <div class="event-item" data-category="무용">
                       <img src="public/carmina.jpg" alt="무용 공연 포스터">
                       <div class="event-info">
-                        <h3>부산국제무용제 : 카르미나부라나</h3>
-                        <p>날짜: 2025.06.07. 토요일 15시</p>
-                        <p>장소: 영화의전당 하늘연극장</p>
+                        <h3>부산국제무용제 '카르미나부라나'</h3>
+                        <p>2025.06.07. 토요일 15시</p>
+                        <p>영화의전당 하늘연극장</p>
                       </div>
                       <a href="https://www.bidf.kr/bbs/board.php?bo_table=team2025&wr_id=16" target="_blank" class="btn1">예매하기</a>
                     </div>
@@ -178,39 +178,40 @@
                     <div class="event-item" data-category="미술">
                       <img src="public/nun.png" alt="미술 전시 포스터">
                       <div class="event-info">
-                        <h3>미술: 열개의 눈 </h3>
-                        <p>날짜: 2025.05.03. ~ 2025.09.07.</p>
-                        <p>장소: 부산현대미술관</p>
+                        <h3>미술 '열개의 눈'</h3>
+                        <p>2025.05.03. ~ 2025.09.07.</p>
+                        <p>부산현대미술관</p>
                       </div>
                       <a href="https://www.busan.go.kr/moca/exhibition01/1676146" target="_blank" class="btn1">예매하기</a>
                     </div>
                   </div>
                 </section>
 
-              <section class="featured2" id="videos">
-                  <h2>추천 영상 콘텐츠</h2>
+              <section class="featured2" id="video">
+                  <h2>영상콘텐츠</h2>
                   <div class="filters">
-                      <button class="filter-btn" id="active2" data-filter="all">전체</button>
-                      <br/>
+                    <button class="filter-btn" id="active2" data-filter="all">전체</button></br>
                       <button class="filter-btn" data-filter="performance">공연 실황</button>
                       <button class="filter-btn" data-filter="documentary">다큐멘터리</button>
                       <button class="filter-btn" data-filter="interview">인터뷰</button>
                       <button class="filter-btn" data-filter="education">영상교육</button>
                   </div>
                   <div class="events-grid2">
+
                       <div class="event-card2" data-category="performance">
                           <div class="event-image2">
                               <iframe width="560" height="315" src="https://www.youtube.com/embed/GOhWWJ9VhOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                           </div>
                           <div class="event-content2">
                               <div class="event-date">2024.12.15</div>
-                              <h3 class="event-title">부산시립교향악단 - 베토벤 교향곡 제9번 '합창'</h3>
-                              <div class="event-location">
+                              <h3 class="event-title">베토벤 교향곡 9번 '합창'</h3>
+                              <div class="event-location">부산시립교향악단 - 
                                   <a href="https://www.bscc.or.kr/intro/" target="_blank">부산문화회관</a>
                               </div>
-                              <a href="https://www.youtube.com/watch?v=GOhWWJ9VhOk" target="_blank" class="btn">시청하기</a>
+                              <a href="https://www.youtube.com/watch?v=GOhWWJ9VhOk" target="_blank" class="btn2">시청하기</a>
                           </div>
                       </div>
+
                       <div class="event-card2" data-category="documentary">
                           <div class="event-image2">
                               <iframe width="560" height="315" src="https://www.youtube.com/embed/FmmlBchkXlE?si=2ZrrpnnP1Gv1qF6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -221,9 +222,11 @@
                               <div class="event-location">
                                   <a href="https://www.knn.co.kr/" target="_blank">부산knn</a>
                               </div>
-                              <a href="https://www.youtube.com/watch?v=OMRR1qUCPlk" target="_blank" class="btn">시청하기</a>
+                              <a href="https://www.youtube.com/watch?v=OMRR1qUCPlk" target="_blank" class="btn2">시청하기</a>
                           </div>
                       </div>
+
+                      <div class="event-card2" data-category="interview">
                           <div class="event-image2">
                               <iframe width="560" height="315" src="https://www.youtube.com/embed/r6HjsuZcALk?si=mnBpUBWgMpAvgvCH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                           </div>
@@ -233,9 +236,10 @@
                               <div class="event-location">
                                   <a href="https://www.bscf.or.kr/" target="_blank">부산문화재단</a>
                               </div>
-                              <a href="https://youtu.be/r6HjsuZcALk?si=mnBpUBWgMpAvgvCH" target="_blank" class="btn">시청하기</a>
+                              <a href="https://youtu.be/r6HjsuZcALk?si=mnBpUBWgMpAvgvCH" target="_blank" class="btn2">시청하기</a>
                           </div>
-                      </div>
+                        </div>
+
                       <div class="event-card2" data-category="education">
                           <div class="event-image2">
                               <iframe width="560" height="315" src="https://www.youtube.com/embed/gUpPeQAVoZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -246,13 +250,13 @@
                               <div class="event-location">
                                   <a href="https://www.bfc.or.kr/" target="_blank">부산영상위원회</a>
                               </div>
-                              <a href="https://www.youtube.com/watch?v=gUpPeQAVoZA" target="_blank" class="btn">시청하기</a>
+                              <a href="https://www.youtube.com/watch?v=gUpPeQAVoZA" target="_blank" class="btn2">시청하기</a>
                           </div>
                       </div>
                   </div>
               </section>
 
-              <section class="newsletter">
+              <section class="newsletter" id="subscription">
                   <h2>문화예술 소식 구독하기</h2>
                   <p>부산의 최신 문화예술 정보를 이메일로 받아보세요.</p>
                   <form class="newsletter-form" onsubmit="handleSubscribe(event)">

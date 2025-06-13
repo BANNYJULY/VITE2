@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Edu VIC WA NT Hand', 'Segoe UI', Tahoma, Geneva, Verdana, roboto, sans-serif;
+  font-family: 'Edu VIC WA NT Hand', Verdana, roboto, sans-serif;
   line-height: 1.6;
   background: linear-gradient(135deg, #667eea 0%, #7555d4 100%);
   color: #333;
@@ -46,32 +46,32 @@ header {
 
 .logo1 {
   font-family: 'Edu VIC WA NT Hand';
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: bold;
   text-align: center;
   word-spacing: 0.2em;
 }
 
-span.color1 {
+#color1 {
   color: #ff0080e1;
   font-size: 2.3rem;
   font-weight: 700;
   margin-left: 1rem;
 }
 
-span.color2 {
+#color2 {
   color: #4000ffe5;
   font-size: 2.0rem;
   font-weight: 700;
 }
 
-span.color3 {
+#color3 {
   color: #1AB3FF;
   font-size: 2.3rem;
   font-weight: 700;
 }
 
-.event-title span4 {
+.event-title {
   opacity: 0.9;
   max-width: 600px;
   margin: 0 auto;
@@ -145,12 +145,12 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  margin: 2rem, auto
+  margin: 1rem, auto
 }
 
 .hero {
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
   color: white;
 }
 
@@ -161,6 +161,12 @@ main {
   font-family: 'Edu VIC WA NT Hand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.hero span {
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-style: roboto;
+}
+
 .hero p {
   font-size: 1.5rem;
   opacity: 0.9;
@@ -169,7 +175,7 @@ main {
   font-family: 'Edu VIC WA NT Hand', Vendera, dsans-serif;
 }
 
-.categories {
+.category {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
@@ -297,7 +303,7 @@ main {
 .btn {
   display: inline-block;
   padding: 0.8rem 2rem;
-  background: linear-gradient(45deg, #FF007F, #FF69B4);
+  background: linear-gradient(45deg, #08a4f1, #90ccebf1);
   color: white;
   text-decoration: none;
   border-radius: 25px;
@@ -325,8 +331,8 @@ main {
 
 .btn1:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255, 0, 127, 0.4);
-  background: linear-gradient(45deg, #FF69B4, #FF007F);
+  box-shadow: 0 5px 15px #5fa7cad0;
+  background: linear-gradient(45deg, #08a4f1, #90ccebf1);
 }
 
 .featured1 {
@@ -369,6 +375,9 @@ main {
 
 /* 개별 이벤트 아이템 */
 .event-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
@@ -547,7 +556,6 @@ color: #08a4f1;
 }
 
 .event-card2 {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -584,13 +592,16 @@ color: #08a4f1;
 }
 
 .event-content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1.5rem;
 }
 
 .btn2 {
   display: inline-block;
   padding: 0.8rem 2rem;
-  background: linear-gradient(45deg, #08a4f1, #a2daf7f1);
+  background: linear-gradient(45deg, #08a4f1, #90ccebf1);
   color: white;
   text-decoration: none;
   border-radius: 25px;
@@ -735,10 +746,27 @@ footer {
   color: white;
 }
 
-#active1, #active2, #active3 {
+#active1, #active2 {
   background: linear-gradient(45deg, #4000ffe5, #9889c5e5);
   border: none;
   color: white;
+}
+
+#active, #active3 {
+  padding: 1rem 2rem;
+  background: linear-gradient(45deg, #4000ffe5, #9889c5e5);
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#active:hover, #active3:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 0, 127, 0.4);
+  background: linear-gradient(45deg, #FF69B4, #FF007F);
 }
 
 .hidden {
@@ -778,11 +806,11 @@ footer {
   }
 }
 
-.culture-search {
+.culture {
   background: white;
   border-radius: 20px;
-  padding: 2rem;
-  margin: 2rem 0;
+  padding: 15px;
+  margin: 15px 0;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -819,22 +847,6 @@ footer {
 #culture-search-input:focus {
   outline: none;
   border-color: #667eea;
-}
-
-.search-btn {
-  padding: 1rem 2rem;
-  background: linear-gradient(45deg, #667eea, #764ba2);
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.search-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
 .search-results {
